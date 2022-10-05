@@ -1,34 +1,58 @@
-const createCell = (cellText) => {
+//Eine Konstante, welche neue Tabellenzellen erstellt
+const createCell = (content) => {
     const cell = document.createElement("td");
-    cell.innerText = cellText;
+    cell.innerText = content;
     return cell;
 }
 
-const addTask = (task) => {
+//Eine Konstante, welche eine Task zu einer Reihe hinzufügt
+const addTask = (tasks) => {
     const display = document.getElementById("display");
-    const tableRow = document.createElement("tr");
+    const row = document.createElement("tr");
 
-    tableRow.append(
-        createCell(tasks.title)
+    row.append(
+        createCell(tasks.id),
+        createCell(tasks.title),
+        createCell(tasks.completed)
     );
-
-    display.appendChild(tableRow);
+    
+    display.append(row);
 }
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
-    const tasksinfo = document.getElementById("tasksinfo");
+    let tasksData;
+    fetch(tasksUrl)
+    .then((response) =>{
+        return response.json();
+    }) 
+    .then((data) => {
+        tasksData = data;
+    });
+    if(tasksData){
+        console.log(tasksData);
+    }else{
+        console.log("no data");
+    }
+});
+*/
+const tasksUrl = 'http://localhost:3000/tasks';
+document.addEventListener("DOMContentLoaded", () => {
+    const tasksForm = document.getElementById("tasksForm")
 
-    tasksinfo.addEventListener()
-})
-let taskData;
-const getTask = () => {
-    fetch('http://localhost:3000/tasks')
-        .then((response) => {
-            response.json();
-        })
-        .then((data) => {
-            taskData = data;
-        });
-}
+    tasksForm.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-getTask();
+        fetch(tasksUrl)
+            .then((response) => {
+                if(response.ok){
+                    return response.json();
+                }
+                alert(response.status)
+            })
+            .then((data) => {
+                console.log((data));
+                addTask(data)
+            });
+    });
+});
