@@ -4,19 +4,33 @@ function createCell(content) {
     return cell;
 }
 
-
-
 function deleteTask(id){
-    fetch(`http://localhost:3000/task/${id}`, {
-        method: "DELETE"
+    fetch(`http://localhost:3000/auth/cookie/task/${id}`, {
+        method: "DELETE",
+        credentials: "include",
     })
     .then(window.location.reload());
 }
 
+function createTask(taskTitle){
+    fetch("http://localhost:3000/auth/cookie/tasks", {
+        method: "POST",
+        credentials: "include",
+        headers: {
+            "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({
+            title: taskTitle
+        })
+    }
+    );
+}
+
 function updateTask(id){
     const newEdit = prompt("Neuer Titel");
-    fetch("http://localhost:3000/tasks", {
+    fetch("http://localhost:3000/auth/cookie/tasks", {
         method: "PUT",
+        credentials: "include",
         headers: {
             "Content-Type" : "application/json"
         },
@@ -28,10 +42,23 @@ function updateTask(id){
     .then(window.location.reload());
 }
 
+function indexTasks(){
+    fetch("http://localhost:3000/auth/cookie/tasks", {
+        method: "GET",
+        credentials: "include"
+    })
+    .then((response) => 
+         response.json())
+    .then((data) => 
+        showTask(data))
+}
+
+//Zeigt eine Tabelle mit allen Tasks und Knöpfe zum Löschen und Bearbeiten an
 function showTask(tasks){
     const display = document.getElementById("display");
     tasks.forEach((task) => {
         const row = document.createElement("tr");
+        const chckcell = document.createElement("td");
         row.append(
             createCell(task.id),
             createCell(task.title),
@@ -55,17 +82,24 @@ function showTask(tasks){
             updateTask(task.id));
 
         display.appendChild(row);
-        });
-}
+        })
 
-function indexTasks(){
-    fetch("http://localhost:3000/tasks")
-    .then((response) => 
-         response.json())
-    .then((data) => 
-        showTask(data))
+        const taskForm = document.getElementById("taskForm")
+        taskForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const taskFormData = new FormData(taskForm);
+            searchTask();
+        });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     indexTasks();
+
+    const addbtn = document.getElementById("addbtn");
+    addbtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>'
+    addbtn.addEventListener("click", () => {
+        const taskTitle = prompt("Task Titel");
+        createTask(taskTitle);
+        window.location.reload();
+    });
 });
