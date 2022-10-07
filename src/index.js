@@ -58,6 +58,7 @@ function showTask(tasks){
     const display = document.getElementById("display");
     tasks.forEach((task) => {
         const row = document.createElement("tr");
+        const checkBox = document.createElement("input");
         const chckcell = document.createElement("td");
         row.append(
             createCell(task.id),
