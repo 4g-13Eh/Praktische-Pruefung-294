@@ -13,6 +13,9 @@ Man muss sich zuerst unter dem Reiter "Login" mit den richtigen Angaben einlogge
 "Deine Tasks" seine Tasks verwalten. Der blaue Knopf mit dem Stift erlaubt es einen, den Tasktitel zu ändern. Der rote Knopf mit dem
 Abfalleimer löscht die Task und mit dem grünen plus Knopf unter der Tabelle kann man eine neue Task hinzufügen.
 
+## Autoren
+Shahin Amon
+
 ## Lizenzen
 -Das Hintergrundbild kann man von diesem Link bekommen: https://img.freepik.com/free-vector/        blue-abstract-gradient-wave-vector-background_53876-111548.jpg?w=2000
 
