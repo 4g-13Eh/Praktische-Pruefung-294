@@ -28,3 +28,6 @@ Shahin Amon
 
 ## Version
 Version 1.0
+
+## Testfälle
+Die Testfälle findet man unter "testfälle.md"

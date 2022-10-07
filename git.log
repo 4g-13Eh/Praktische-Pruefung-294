@@ -1,0 +1,86 @@
+commit b0a67d46228c48aad92c54dc8e5cf7eb24311ca9
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 16:13:43 2022 +0200
+
+    Info zur Searchbar im README
+
+commit f30bd7fccaf83c6247cdd0babe906efe80a34b41
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 16:12:15 2022 +0200
+
+    Autor bei README hinzugefügt
+
+commit 9b1327b23467b95014ec0d36c6686c6d5db5e18d
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 16:00:29 2022 +0200
+
+    feat: Bild geändert, README erweitert
+
+commit 5c24089599c75008a7237202d295a360852c7187
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 15:53:06 2022 +0200
+
+    feat: README hinzugefügt
+
+commit 11d0e07ddd391ffb5809f9b74eed82cd8511bb70
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 15:39:59 2022 +0200
+
+    addTask.html und -.js gelöscht
+
+commit 05b2989b12b134810c1e5e4ee3f8593722ee372b
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 15:39:04 2022 +0200
+
+    feat: änderungen
+
+commit e0350c62df4d58459b7bc40ffcf6f00e75798d26
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 15:31:04 2022 +0200
+
+    feat: login gemacht und addtask Funktion in index vershcoben
+
+commit 1f44d5d25605d5f427d21080ac25d2e1ed4dbacc
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 15:30:01 2022 +0200
+
+    feat: addTask in index verschoben und button dafür gemacht
+
+commit 3b77563c826abcca98e35b69557f650a84f8d68d
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 15:29:34 2022 +0200
+
+    feat: login gemacht
+
+commit 1c843390d44bd8fa4cdd5e6ea61af4b6a561143f
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Fri Oct 7 12:15:52 2022 +0200
+
+    feat: login ertsellt
+
+commit e0309c743a472ebe7233ca77008544b4d8006afd
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Thu Oct 6 16:44:27 2022 +0200
+
+    feat: styles hinzugefügt, lösch, update Funktionen hinzugefügt
+
+commit 8daf4009a840ab603faa0579eabd4d87570e1cb7
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Thu Oct 6 10:53:06 2022 +0200
+
+    feat: Erstellen einer Task umgesetzt
+
+commit f1c37056f1d6c4276fd13db8c0fa2e402c4fd31a
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Wed Oct 5 22:08:47 2022 +0200
+
+    feat: Alle für den Anfang benötigten Datein erstellt, versucht, Tasks zu getten
+    prob:
+    -Daten werden als Object und nicht als Array angezeigt
+    -Falls Daten mit addTask hinzufügen -> undefined rückgabe
+
+commit 85dd1945d6804437836a6484367df7b0de34758f
+Author: Shahin Amon <amons@bzz.ch>
+Date:   Wed Oct 5 18:19:46 2022 +0200
+
+    feat: Files upload
