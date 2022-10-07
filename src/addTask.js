@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     function createTask(taskTitle){
-        fetch("http://localhost:3000/tasks", {
+        fetch("http://localhost:3000/auth/cookie/tasks", {
             method: "POST",
+            credentials: "include",
             headers: {
                 "Content-Type" : "application/json"
             },

@@ -10,11 +10,6 @@
     margin-right: 10px;
 }
 
-.delbtn:hover {
-    background-color: #c5c5c5;
-}
-
-
 #editbtn{
     background-color: #4c72af;
     color: white;
@@ -25,4 +20,41 @@
     float: right;
     margin-top: 6px;
     margin-right: 10px;
+}
+
+
+body{
+    size: 100%;
+    background-image: url("https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg");
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: gray 1px solid;
+    background-color: rgb(186, 225, 249);
+}
+
+h1{
+    color: navy
+}
+
+.hidden {
+    display: none;
+}
+
+#addbtn{
+    background-color: greenyellow ;
+    color: black;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.nav{
+    background-color: gainsboro
 }
