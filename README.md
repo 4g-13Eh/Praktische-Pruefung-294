@@ -14,6 +14,9 @@ Man muss sich zuerst unter dem Reiter "Login" mit den richtigen Angaben einlogge
 Abfalleimer löscht die Task und mit dem grünen plus Knopf unter der Tabelle kann man eine neue Task hinzufügen.
 
 ## Lizenzen
+-Das Hintergrundbild kann man von diesem Link bekommen: https://img.freepik.com/free-vector/        blue-abstract-gradient-wave-vector-background_53876-111548.jpg?w=2000
+
+-Die Icons stammen von Bootstrap
 
 ## Requirements / Setup
 -VScode Live Server o.Ä.
