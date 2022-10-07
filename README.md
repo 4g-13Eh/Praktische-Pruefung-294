@@ -11,7 +11,8 @@ Meine Motivation war, bei diesem Projekt ein gutes Resultat zu erzielen.
 ## Bedinung
 Man muss sich zuerst unter dem Reiter "Login" mit den richtigen Angaben einloggen. Falls man das tut, kann man beim Reiter
 "Deine Tasks" seine Tasks verwalten. Der blaue Knopf mit dem Stift erlaubt es einen, den Tasktitel zu ändern. Der rote Knopf mit dem
-Abfalleimer löscht die Task und mit dem grünen plus Knopf unter der Tabelle kann man eine neue Task hinzufügen.
+Abfalleimer löscht die Task und mit dem grünen plus Knopf unter der Tabelle kann man eine neue Task hinzufügen. Die Searchfunktion 
+wurde hier aber nicht umgesetzt, weshalb es nichts ausführt.
 
 ## Autoren
 Shahin Amon
